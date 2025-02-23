@@ -13,5 +13,4 @@ This is a **Basic Calculator** built using **HTML, CSS, and JavaScript**. It sup
 - **HTML5** – Structure of the calculator  
 - **CSS3** – Styling and layout  
 - **JavaScript** – Functionality and calculations  
-
-## Folder Structure  
+  
