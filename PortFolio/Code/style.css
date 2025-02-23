@@ -1,0 +1,383 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #222;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.bio{
+    font-size: 30px;
+}
+.logo img{
+    width: 95px;
+    height: 95px;
+}
+nav ul{
+    float: right;
+    line-height: 80px;
+    font-size: 17px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 5px;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 8px;
+    border-radius: 10px;
+}
+nav a:hover{
+    background-color: rgb(0, 208, 255);
+    color: black;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-left{
+    width: 50vw;
+    padding: 15px;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.home-left h3{
+    font-size: 70px;
+    color: yellow;
+    letter-spacing: 1px;
+    font-weight: 1000;
+}
+.home-left p{
+    color: yellow;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.home-left .button{
+    margin-left: 200px;
+    padding: 12px 25px;
+    color: white;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    background-color: #da1207;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-size: 30px;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0.2;}
+    100%{opacity: 1;}
+}
+.home-left .button:hover{
+    background-color: #3498db;
+    transition: 0.5s;
+    animation: none;
+}
+.home-right{
+    width: 50vw;
+    padding-left: 120px;
+    padding-top: 60px;
+}
+.home-right img{
+    height: 380px;
+    width: 370px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about{
+    text-align: center;
+    padding-top: 60px;
+}
+.about h1{
+    font-size: 50px;
+    color: yellow;
+}
+.about p{
+    padding-top: 20px;
+    text-align: justify;
+    padding: 30px;
+    color: white;
+}
+.skills{
+    color: yellow;
+    padding-top: 60px;
+}
+.skills h1{
+    font-size: 50px;
+    text-align: center;
+}
+.skill{
+    margin-bottom:20px;
+}
+.skill-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    padding-top: 50px;
+}
+.skill-view-left{
+    width: 50vw;
+    padding-left: 30px;
+}
+.skill-view-right{
+    width: 50vw;
+    padding-right: 30px;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+.progress-bar{
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress{
+    background-color: #12eadc;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+}
+.extra-skills{
+    padding: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.extra-skills li{
+    color: white;
+    margin-left: 30px;
+}
+.projects{
+    color: yellow;
+    padding-top: 50px;
+}
+.projects h1{
+    font-size: 50px;
+    text-align: center;
+}
+.project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.project-card{
+    background: white;
+    box-shadow: 0 4px 6px rgba(253, 0, 101, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(234, 0, 255, 0.2);
+}
+.project img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.project-content{
+    padding: 15px;
+}
+.project h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+.project p{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+.project-buttons a{
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    background-color: #3498db;
+    transition: background-color 0.2s;
+}
+.project-buttons a:hover{
+    background-color: #1ea32e;
+}
+.resume{
+    color: yellow;
+    padding-top: 50px;
+}
+.resume h1{
+    font-size: 50px;
+    text-align: center;
+}
+.resume-section{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.resume-section-left{
+    width: 50vw;
+    padding-top: 150px;
+}
+.resume-section h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.resume-section p{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+}
+.resume-button{
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.resume-button:hover{
+    background-color: #53c710;
+}
+.resume-preview{
+    width: 50vw;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.resume-preview img{
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+}
+.contact{
+    color: yellow;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact h1{
+    font-size: 50px;
+    text-align: center;
+}
+.contact-section{
+    background-color: 3498db;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.contact-section h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.contact-section p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.contact-section p a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-section p a:hover{
+    color: yellow;
+}
+.contact-form{
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: black;
+}
+.contact-form button{
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover{
+    background-color: #0a9715;
+}
+.footer{
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.social-icons{
+    margin-top: 20px;
+}
+.social-icons a{
+    font-size: 20px;
+    margin: 0 15px;
+}
+.social-icons a img{
+    height: 30px;
+}
